@@ -7,5 +7,6 @@ It allows to find and kill non-VNC services which run on VNC ports.
 $ sudo -i
 $ cd /root/
 $ git clone https://github.com/mperov/protectionPortVNC.git
-$ 
+$ cd protectionPortVNC/
+$ ./appendCron.sh
 ```
