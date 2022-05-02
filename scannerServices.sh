@@ -13,7 +13,7 @@ for srv in $VNC_SRV; do
     pid=`echo $srv | awk -F '/' '{print $1}'`
     name=`echo $srv | awk -F '/' '{print $2}'`
     if [[ "$name" != "Xvnc" ]]; then
-        echo "ALERT! - $name must be killed: kill -9 $pid"
+        echo "$pid"
     fi
   fi
 done
