@@ -9,5 +9,9 @@ PATTERN="0:59"
 VNC_SRV=`netstat -tulpn 2>/dev/null | grep $PATTERN | awk '{print $7}'`
 
 for srv in $VNC_SRV; do
-  echo $srv
+  if [[ "$srv" != "-" ]]; then
+    pid=`echo $srv | awk -F '/' '{print $1}'`
+    name=`echo $srv | awk -F '/' '{print $2}'`
+    echo "$pid $name"
+  fi
 done
