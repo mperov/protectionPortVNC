@@ -1,5 +1,5 @@
 ## protectionPortVNC
-It allows to find, report administrators and kill non-VNC services which run on VNC ports
+It allows to find, report administrators and kill non-VNC services which run on VNC ports.  
 **protectionPortVNC is developed on CentOS so supporting other systems isn't guaranteed!**
 
 ### Requirements
