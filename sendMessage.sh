@@ -4,7 +4,7 @@
 # Copyright (c) 2022 Maksim Perov <coder@frtk.ru>
 #
 
-SUBJECT="ALERT: illegal using of VNC port"
+SUBJECT="ALERT: illegal using of VNC port on `hostname`"
 SERVER=""
 EMAIL=""
 USER=""
