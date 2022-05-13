@@ -16,6 +16,7 @@ for srv in $VNC_SRV; do
     path=`readlink -f /proc/$pid/exe`
     if [[ "$path" != "$PATTERN_PATH" ]]; then
         echo "$pid"
+        `dirname $0`/sendMessage.sh "`ps aux | grep $pid | grep $path`"
     fi
   fi
 done
